@@ -35,3 +35,29 @@ AIユースケースに再利用可能なデータ基盤を構築し、需要予
 
 ## 推奨ラベル
 `task` `data-platform` `supply-chain` `ai` `high-priority`
+
+---
+
+## 関連ドキュメント（成果物）
+
+完了条件を満たすために以下のドキュメントを作成済み。詳細は [`docs/data_integration/`](../docs/data_integration/) を参照。
+
+| ドキュメント | 概要 |
+|---|---|
+| [01 システム連携仕様書](../docs/data_integration/01_system_connection_specs.md) | 調達/生産/在庫/物流/品質 5系統の連携方式・技術仕様・SLA |
+| [02 マスターデータ統合ルール仕様書](../docs/data_integration/02_master_data_integration_rules.md) | 部品・拠点・サプライヤー・車種マスタの統合ルール |
+| [03 データ品質ルールおよびKPI定義書](../docs/data_integration/03_data_quality_rules_and_kpis.md) | 欠損・重複・遅延・異常値のルールとKPI |
+| [04 データ更新頻度およびSLA設計書](../docs/data_integration/04_data_update_frequency_and_sla.md) | リアルタイム/日次/週次の更新頻度とSLA設計 |
+| [05 共通データモデル設計書](../docs/data_integration/05_common_data_model.md) | 3層データモデルとAI特徴量スキーマ |
+| [06 共通データ辞書](../docs/data_integration/06_data_dictionary.md) | フィールド定義・コード体系・KPI定義・用語集 |
+| [07 データ連携PoC実施報告書](../docs/data_integration/07_poc_report.md) | 第1工場PoCの実施結果・課題・推奨事項 |
+| [08 初期ベースライン計測レポート](../docs/data_integration/08_baseline_measurements.md) | 欠損率・更新遅延・マスタ不整合率の計測結果 |
+
+## 完了条件の達成状況
+
+| 完了条件 | ステータス |
+|---|---|
+| 主要5系統の連携仕様が文書化され承認済み | ✅ 完了 |
+| 共通データ辞書とデータ品質KPIが確定 | ✅ 完了 |
+| 代表拠点1つでデータ連携PoCが完了 | ✅ 完了（第1工場） |
+| 欠損率・更新遅延・マスタ不整合率の初期ベースラインを計測済み | ✅ 完了 |
